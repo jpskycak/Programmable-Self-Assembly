@@ -44,3 +44,5 @@ The original algorithm can fail on shapes which have holes or cutouts in them be
 Dilate the shape 4x
 
 keep unit distance from nearest neighbors, to allow other agents to pass. Penalize holes in the shape -- agent cannot stop inside a hole, but it can stop on the exterior (may be needed if there are too many agents)
+
+latex test: $$\int \zeta(x) dx$$
