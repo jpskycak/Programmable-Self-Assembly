@@ -7,6 +7,8 @@
     </style>
 </head>
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ### Purpose
 
 The goal of this project is to improve upon the self-assembly algorithm presented by Rubenstein, Cornejo, and Nagpal in the paper <i>Programmable self-assembly in a thousand-robot swarm</i>. Their algorithm "guarantees that a large group of robots, with limited capabilities and local communication, can cooperatively assemble into any 1-connected user-specified shape (with some restrictions)." Informally, this means it works on shapes having no "holes" or "cutouts". My goal in particular is to extend their algorithm to work on any 1-connected shape in general, including those having holes or cutouts.
