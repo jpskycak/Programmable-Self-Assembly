@@ -7,15 +7,17 @@
     </style>
 </head>
 
-## Welcome to GitHub Pages
+### Purpose
 
-You can use the [editor on GitHub](https://github.com/jpskycak/Programmable-Self-Assembly/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The goal of this project is to improve upon the self-assembly algorithm presented by Rubenstein, Cornejo, and Nagpal in the paper <i>Programmable self-assembly in a thousand-robot swarm</i>. Their algorithm "guarantees that a large group of robots, with limited capabilities and local communication, can cooperatively assemble into any 1-connected user-specified shape (with some restrictions)." Informally, this means it works on shapes having no "holes" or "cutouts". My goal in particular is to extend their algorithm to work on 1-connected shape in general, including those having holes or cutouts.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Original Algorithm
 
-### Markdown
+What it is:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Where it fails in non
+
+### Extended Algorithm
 
 ```markdown
 Syntax highlighted code block
