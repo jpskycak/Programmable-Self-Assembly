@@ -15,6 +15,8 @@ The goal of this project is to improve upon the self-assembly algorithm presente
 
 What it is:
 
+$$\int \frac{1}{2} dx$$
+
 Where it fails in non
 
 ### Extended Algorithm
