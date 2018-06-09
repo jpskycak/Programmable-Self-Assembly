@@ -24,8 +24,8 @@ The shape-filling algorithm proceeds as follows:
 1. A shape is chosen as a set of nonnegative coordinates.
 2. A source agent is chosen, and its coordinates are assigned to be some point on the shape.
 3. Each agent estimates its own coordinates and edge-follows clockwise (if able). It eventually enters the desired shape (as determined by its estimated coordinates) and continues to edge-follow until one of the following stop-conditions is true:
-   1. another move would cause it to exit the shape, or
-   2. it is next to a stationary agent with same gradient value, which has moved from its initial position.
+   a. another move would cause it to exit the shape, or
+   b. it is next to a stationary agent with same gradient value, which has moved from its initial position.
    
 The second stop condition is necessary because without it, the agents would line up along the perimeter of the shape, eventually closing off the interior of the shape before it is filled.
 
