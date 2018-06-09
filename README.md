@@ -9,7 +9,7 @@
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-# <center>Programmable Self-Assembly</center>  
+<center><font size="5">Programmable Self-Assembly</font></center>  
 <center>Justin Skycak</center>
 
 ### Purpose
