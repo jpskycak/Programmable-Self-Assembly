@@ -20,36 +20,27 @@ It is assumed that each agent has the ability to communicate with and estimate t
 2. estimate its own coordinates (as those which minimize the discrepancy between the observed distances to neighbors and the distances calculated using neighbors' estimations of their own coordinates), and
 3. estimate its distance from the source (the source has gradient value zero, and each agent generates a gradient value as one more than the minimum of the gradient values of its neighbors).
 
-$$\int \frac{1}{2} dx$$
+The shape-filling algorithm proceeds as follows:
+1. A shape is chosen as a set of nonnegative coordinates.
+2. A source agent is chosen, and its coordinates are assigned to be some point on the shape.
+3. Each agent estimates its own coordinates and edge-follows clockwise (if able). It eventually enters the desired shape (as determined by its estimated coordinates) and continues to edge-follow until one of the following stop-conditions is true:
+   1. another move would cause it to exit the shape, or
+   2. it is next to a stationary agent with same gradient value, which has moved from its initial position.
+   
+The second stop condition is necessary because without it, the agents would line up along the perimeter of the shape, eventually closing off the interior of the shape before it is filled.
 
-Where it fails in non
+### Simulation
 
-### Extended Algorithm
+Build a computer simulation  -- pixels on a grid @ https://colab.research.google.com/drive/1Q0NYziPHotNOQMMr3hfI_unYi9muxIW9
 
-```markdown
-Syntax highlighted code block
+### Problem with Holes
 
-# Header 1
-## Header 2
-### Header 3
+The original algorithm can fail on shapes which have holes or cutouts in them because _____
 
-- Bulleted
-- List
+(do agents get trapped?)
 
-1. Numbered
-2. List
+### Modifications
 
-**Bold** and _Italic_ and `Code` text
+Dilate the shape 4x
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jpskycak/Programmable-Self-Assembly/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+keep unit distance from nearest neighbors, to allow other agents to pass. Penalize holes in the shape -- agent cannot stop inside a hole, but it can stop on the exterior (may be needed if there are too many agents)
