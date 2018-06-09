@@ -1,3 +1,12 @@
+<head>
+    <style type="text/css">
+       a:link {color: blue;}      /* unvisited link */
+       a:visited {color: blue;}   /* visited link */
+       a:hover {color: blue;}     /* mouse over link */
+       a:active {color: blue;}    /* selected link */
+    </style>
+</head>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/jpskycak/Programmable-Self-Assembly/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
