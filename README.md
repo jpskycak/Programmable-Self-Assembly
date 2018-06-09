@@ -13,7 +13,10 @@ The goal of this project is to improve upon the self-assembly algorithm presente
 
 ### Original Algorithm
 
-What it is:
+It is assumed that each agent has the ability to communicate with and estimate the distances to other agents within a given radius, "neighbors." Thus, each agent can
+1. move along an edge (by maintaining fixed distance to the center of the nearest neighbor),
+2. estimate its own coordinates (as those which minimize the discrepancy between the observed distances to neighbors and the distances calculated using neighbors' estimations of their own coordinates), and
+3. estimate its distance from the source (the source has gradient value zero, and each agent generates a gradient value as one more than the minimum of the gradient values of its neighbors).
 
 $$\int \frac{1}{2} dx$$
 
